@@ -43,9 +43,22 @@ ESLint, Prettier
    - Rendering mode: `Universal (SSR / SSG)`
    - Deployment target: `Server (Node.js hosting)`
    - Development tools: `jsconfig.json (Recommended for VS Code if you're not using typescript)`
-   - Continuous integration: `None`
+   - Continuous integration: `None`ㅁ
    - Version control system: `Git`
 
 **2.** `cd <project-name>`
 
 **3.** `npm run dev`
+
+## Nuxt에서 eslintrc.js에 prettier 설정하기
+**1.**
+```
+npm i -D prettier-standard   
+npm i -D eslint-config-standard eslint-plugin-standard eslint-plugin-promise eslint-plugin-import eslint-plugin-node eslint-plugin-prettier eslint-config-prettier prettier-config-standard eslint-config-prettier-standard
+```
+
+**2.** 
+`eslintrc.js` extends에  'prettier-standard' 추가
+
+**3.** 
+`eslintrc.js` rules에 prettier 설정값 추가
