@@ -43,7 +43,7 @@ ESLint, Prettier
    - Rendering mode: `Universal (SSR / SSG)`
    - Deployment target: `Server (Node.js hosting)`
    - Development tools: `jsconfig.json (Recommended for VS Code if you're not using typescript)`
-   - Continuous integration: `None`ㅁ
+   - Continuous integration: `None`
    - Version control system: `Git`
 
 **2.** `cd <project-name>`

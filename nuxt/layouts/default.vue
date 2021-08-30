@@ -1,29 +1,19 @@
 <template>
-  <div>
-    <header id="header">
-      <h1>{{ $route.name }} page</h1>
-      <ul>
-        <li>
-          <NuxtLink to="/">홈페이지</NuxtLink>
-        </li>
-        <li>
-          <NuxtLink to="/main">메인페이지</NuxtLink>
-        </li>
-        <li>
-          <NuxtLink to="/product">상품페이지</NuxtLink>
-        </li>
-      </ul>
-    </header>
+  <div id="app">
+    <AppHeader />
     <Nuxt />
   </div>
 </template>
 
 <script>
+import AppHeader from '@/components/AppHeader.vue';
 export default {
-
-}
+  components: { AppHeader },
+};
 </script>
 
-<style>
-
+<style scoped>
+.app {
+  position: relative;
+}
 </style>
