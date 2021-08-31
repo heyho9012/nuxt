@@ -11,7 +11,7 @@
       <div class="side-panel">
         <p class="name">{{ product.name }}</p>
         <p class="price">{{ product.price }}</p>
-        <!-- <button type="button" @click="addToCart">Add to Cart</button> -->
+        <button type="button" @click="addToCart">Add to Cart</button>
       </div>
     </article>
   </main>
@@ -30,11 +30,11 @@ export default {
   },
 
   methods: {
-    // async addToCart() {
-    //   await createCartItem(this.product);
-    //   this.$store.commit('addItemToCart', this.product);
-    //   this.$router.push('/cart');
-    // },
+    addToCart() {
+      // await createCartItem(this.product);
+      this.$store.commit('addCartItem', this.product);
+      this.$router.push('/cart');
+    },
   },
 
   // created() {
